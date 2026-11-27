@@ -1,4 +1,4 @@
-// puffer-karte v1.0.0
+// puffer-karte v1.0.1
 // Einzeln installierbares Modul (Home Assistant Marketplace / HACS, Kategorie Dashboard).
 window.customCards = window.customCards || [];
 window.customCardFeatures = window.customCardFeatures || [];
@@ -231,7 +231,7 @@ class PufferKarte extends HTMLElement {
 
 if (!customElements.get(TYPE5)) customElements.define(TYPE5, PufferKarte);
 if (!window.customCards.some((c) => c.type === TYPE5)) {
-  window.customCards.push({ type: TYPE5, name: "Puffer-Karte", description: "Pufferspeicher mit Temperaturverlauf, Ladezustand und Pumpe" });
+  window.customCards.push({ type: TYPE5, name: "Puffer-Karte", description: "Pufferspeicher mit Temperaturverlauf, Ladezustand und Pumpe", preview: true });
 }
 
 // Eingabemaske (visueller Editor) und Startwerte
